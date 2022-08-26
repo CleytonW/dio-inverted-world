@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
   
   <title> Mundo Invertido </title>
 </head>
-<body>
-  <header>
+<body class="light-theme" aria-label="O site está utilizando o tema light" role="body">
+  <header aria-label="Cabeçalho da página.">
 
     <audio id="music" autoplay>
-      <source src="./assets/normal-world.mpeg" aria-details="Audio do site">
+      <source src="/assets/normal-world.mpeg" aria-details="Audio do site" />
     </audio>
 
     <div class="header-content">
-      <img class="invert-element" src="./assets/images/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO." />
+      <img class="invert-element" src="/assets/images/banner/logo.svg" alt="Imagem principal Mundo Invertido. Semana Frontend DIO." />
       <p class="invert-element" role="text">
         Uma jornada para quem não tem medo do desconhecido. O caminho para o
         Mundo invertido é incerto, repleto de obstáculos e perigos. Porém, a
@@ -25,9 +25,13 @@
       </p>
       <button id="switch-theme-button" onclick="switchTheme()">Inverter Mundos</button>
     </div>
+
+    <div id="top-characters" class="world-characters"></div>
   </header>
 
   <main>
+    <div id="bottom-characters" class="world-characters"></div>
+
     <section id="section-inverted-world" class="container">
       <div class="section-texts">
         <h1>O Mundo Invertido</h1>
@@ -80,7 +84,7 @@
             <img src="./assets/images/content/serie-image-02.png" alt="Imagem ilustrativa dos principais personagens da série">
           </li>
           <li class="gallery-image invert-element">
-            <img src="./assets/images/content/serie-image-03.png" alt="Imagem Eleven assustada">
+            <img width="80%" src="./assets/images/content/serie-image-03.png" alt="Imagem Eleven assustada">
           </li>
         </ul>
     </section>
